@@ -19,10 +19,11 @@
 
         'Calling a sub from LogicDemo
         'LogicDemo.MySub()
-        'Calculate(10, True)
+        ' newfunc() -- not accessible since it is private to logicdemo
         'MySub()
         'DoThis()
         'DoThisAsWell()
+        'LogicDemo.varForAll = 20
 
         ConditionsAndLoops.Run(9, 15, "Bunny")
 
