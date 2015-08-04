@@ -17,6 +17,15 @@
         '       Constants -- whose value remains fixed
         '           Pi etc.
 
+        'Calling a sub from LogicDemo
+        'LogicDemo.MySub()
+        'Calculate(10, True)
+        'MySub()
+        'DoThis()
+        'DoThisAsWell()
+
+        ConditionsAndLoops.Run(9, 15, "Bunny")
+
         'Lifecycle of a variable
         ' Declare
         ' Use 
