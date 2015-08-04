@@ -16,16 +16,26 @@
     '   Call
     '       calling from another logic block
 
+    'Module level variable
+    Dim modVar As Integer
+
+    'accessible outside the module
+    Public varForAll As Integer
+
     'Declare a function
     Function DoThis() As Integer
         'body
         DoThisAsWell()
+        'rtr
+        modVar = 20
         Return 0
     End Function
 
     'Declare a subroutine
     Sub DoThisAsWell()
+        'rtr is a local variable and its scope is limited within this subroutine
         Dim rtr As Integer = DoThis()
+        modVar = 10
         'body
     End Sub
 
@@ -57,5 +67,9 @@
 
     Function Calculate(x As String, z As Integer) As Boolean
         Return False
+    End Function
+
+    Private Function newFunc() As Boolean
+        Return True
     End Function
 End Module
